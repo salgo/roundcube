@@ -48,15 +48,17 @@ Supported replacement variables:
 - node['roundcube']['imap_default_port'] - default port is 143, the default IMAP port
 - node['roundcube']['smtp_default_host'] - SMTP host, default is 'localhost'
 
-// SMTP server host (for sending mails).
-// To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://
-// If left blank, the PHP mail() function is used
-// Supported replacement variables:
-// %h - user's IMAP hostname
-// %n - http hostname ($_SERVER['SERVER_NAME'])
-// %d - domain (http hostname without the first part)
-// %z - IMAP domain (IMAP hostname without the first part)
-// For example %n = mail.domain.tld, %d = domain.tld
+To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://
+
+If left blank, the PHP mail() function is used
+
+Supported replacement variables:
+%h - user's IMAP hostname
+%n - http hostname ($_SERVER['SERVER_NAME'])
+%d - domain (http hostname without the first part)
+%z - IMAP domain (IMAP hostname without the first part)
+
+For example %n = mail.domain.tld, %d = domain.tld
 
 - node['roundcube']['smtp_default_port'] - SMTP port, default is 25
 - node['roundcube']['smtp_default_user'] - SMTP username, default is '%u' which in Roundcube configuration means the username supplied at login (i.e. the IMAP one)
