@@ -53,10 +53,10 @@ To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://
 If left blank, the PHP mail() function is used
 
 Supported replacement variables:
-%h - user's IMAP hostname
-%n - http hostname ($_SERVER['SERVER_NAME'])
-%d - domain (http hostname without the first part)
-%z - IMAP domain (IMAP hostname without the first part)
+- %h - user's IMAP hostname
+- %n - http hostname ($_SERVER['SERVER_NAME'])
+- %d - domain (http hostname without the first part)
+- %z - IMAP domain (IMAP hostname without the first part)
 
 For example %n = mail.domain.tld, %d = domain.tld
 
