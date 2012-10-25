@@ -1,4 +1,3 @@
-
 Description
 ===========
 
@@ -57,7 +56,7 @@ Supported replacement variables:
 
 For example %n = mail.domain.tld, %d = domain.tld
 
-### imap_default_host
+### smtp_default_host
 
 node['roundcube']['smtp_default_host'] - SMTP host, default is 'localhost'
 
