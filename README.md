@@ -51,10 +51,11 @@ node['roundcube']['imap_default_host'] - default host is empty (which allows the
 
 To use SSL/TLS connection, enter hostname with prefix ssl:// or tls://
 Supported replacement variables:
- %n - http hostname ($_SERVER['SERVER_NAME'])
- %d - domain (http hostname without the first part)
- %s - domain name after the '@' from e-mail address provided at login screen
- For example %n = mail.domain.tld, %d = domain.tld
+ - %n - http hostname ($_SERVER['SERVER_NAME'])
+ - %d - domain (http hostname without the first part)
+ - %s - domain name after the '@' from e-mail address provided at login screen
+
+For example %n = mail.domain.tld, %d = domain.tld
 
 ### imap_default_host
 
